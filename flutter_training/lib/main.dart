@@ -13,9 +13,18 @@ const HomeWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: Center(
-          child: Text("Hlo Nisha",style:TextStyle(fontSize: 50, color: Colors.red)),
+          child: Column(
+            children: [
+              const Text("Hi Nisha",
+          style:TextStyle(fontSize: 50, color: Colors.red)
+          ),
+          Image.network('https://picsum.photos/200',
+            height: 60,
+            width: 60,
+            )],
+          )
         ),
       );
   }
