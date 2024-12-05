@@ -23,7 +23,10 @@ const HomeWidget({super.key});
           Image.network('https://picsum.photos/200',
             height: 60,
             width: 60,
-            )],
+            ),
+            Image.asset('assets/img.png'),
+            Image.asset('assets/nanu.jpg')
+            ],
           )
         ),
       );
